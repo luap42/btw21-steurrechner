@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steuereinsparungen nach Partei</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Steuereinsparungen nach Partei</h1>
+
+        <div class="question">
+            Wie verändern sich meine Steuern nach den Plänen der Parteien?
+        </div>
+
+        <div class="entry">
+            <input type="number" id="financial" placeholder="Jahreseinkommen in Euro">
+        </div>
+
+        <div class="output unloaded">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Partei</th>
+                        <th>Veränderung</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>CDU/CSU</th>
+                        <td>
+                            <div class="bar">
+                                <div class="bar--area is-minus" id="cducsu"></div>
+                            </div>
+                            <p>Mit den Vorschlägen der Union würdest du <strong id="cducsu-text"></strong> Steuern zahlen.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>SPD</th>
+                        <td>
+                            <div class="bar">
+                                <div class="bar--area is-plus" id="spd"></div>
+                            </div>
+                            <p>Mit den Vorschlägen der SPD würdest du <strong id="spd-text"></strong> Steuern zahlen.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>AfD</th>
+                        <td>
+                            <div class="bar">
+                                <div class="bar--area is-plus" id="afd"></div>
+                            </div>
+                            <p>Mit den Vorschlägen der AfD würdest du <strong id="afd-text"></strong> Steuern zahlen.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>FDP</th>
+                        <td>
+                            <div class="bar">
+                                <div class="bar--area is-plus" id="fdp"></div>
+                            </div>
+                            <p>Mit den Vorschlägen der FDP würdest du <strong id="fdp-text"></strong> Steuern zahlen.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>LINKE</th>
+                        <td>
+                            <div class="bar">
+                                <div class="bar--area is-plus" id="linke"></div>
+                            </div>
+                            <p>Mit den Vorschlägen der Linken würdest du <strong id="linke-text"></strong> Steuern zahlen.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>GRÜNE</th>
+                        <td>
+                            <div class="bar">
+                                <div class="bar--area is-plus" id="gruene"></div>
+                            </div>
+                            <p>Mit den Vorschlägen der Grünen würdest du <strong id="gruene-text"></strong> Steuern zahlen.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>(Aufgeführt sind die im Bundestag vertretenen Parteien in Reihenfolge des letzten Wahlergebnisses.)</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
